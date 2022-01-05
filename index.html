@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./CSS/style.css">
+  
+  <title>Time tracking dashboard</title>
+</head>
+<body>
+  <main>
+    <section class="profile">
+      <div class="profile__persona">
+        <img src="./images/image-jeremy.png" alt="A profile image of Jeremy" class="profile__persona--img">
+        <div class="profile__persona--text">
+          <h1 class="profile__persona-title">Report for</h1>
+          <h2 class="profile__persona-name">Jeremy Robson</h2>
+        </div>
+      </div>
+      <div class="profile__timespan">
+        <a href="#" class="profile__timespan--unit daily" name="daily">Daily</a>
+        <a href="#" class="profile__timespan--unit weekly" name="weekly">Weekly</a>
+        <a href="#" class="profile__timespan--unit monthly" name="monthly">Monthly</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="all-cards">
+    <div class="all-cards__grid">
+    </div>
+  </div>
+    
+  <script src="./data.json"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
