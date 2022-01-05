@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/vanilla-javascript-sass-and-bem-hI7eOZXK5
+- Live Site URL: https://rikvandersar.github.io/Tracking-Dashboard/
 
 ## My process
 Fixing the styling with Sass went easily. The harder part was the Javascripting but didn't run into much problems after all. 
