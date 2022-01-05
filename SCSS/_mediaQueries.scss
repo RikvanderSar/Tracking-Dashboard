@@ -1,0 +1,100 @@
+@media (min-width: 700px) {
+    body {
+        min-height: 100vh;
+        grid-template-columns: 10% 1fr 3fr 10%;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    main {
+        margin-top: 0;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .all-cards {
+        grid-column: 3/-2;
+        grid-row: 1/2;
+    }
+    
+    .all-cards__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .profile {
+        grid-column: 2/3;
+        grid-row: 1/ span 2;
+        margin: 0;
+    }
+
+    .profile__persona {
+        flex-direction: column;
+    }
+
+    .profile__persona--text {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .profile__timespan {
+        flex-direction: column;
+    }
+
+    .profile__timespan--unit {
+        margin-top: 1rem;
+    }
+
+    .card__content--title {
+        justify-content: space-between;
+    }
+
+    .card__content--data {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    .work {
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+
+    .play {
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+
+    .study {
+        grid-column: 3/4;
+        grid-row: 1;
+    }
+
+    .exercise {
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+
+    .social {
+        grid-column: 2/3;
+        grid-row: 2;
+    }
+
+    .selfcare {
+        grid-column: 3/4;
+        grid-row: 2;
+    }
+
+    .card__content--time {
+        font-size: 4rem;
+    }
+
+    .card__content--last {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+}

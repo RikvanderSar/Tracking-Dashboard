@@ -1,0 +1,104 @@
+@import 'generalStyle';
+@import 'cardTops';
+@import 'mediaQueries';
+
+main {
+    margin-top: 5rem;
+    grid-column: 2/3;
+}
+
+.all-cards {
+    grid-column: 2/3;
+}
+
+.profile {
+    margin: 1rem auto;
+    grid-column: 2/-2;
+    width: 100%;
+}
+
+.profile__persona {
+    display: flex;
+    position: relative;
+    gap: 2rem;
+    background-color: $usercard-background-clr;
+    border-radius: 15px;
+    padding: 2.0rem;
+    margin-bottom: -10px;
+    z-index: 10;
+}
+
+.profile__persona--text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile__persona--img {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 70px;
+}
+
+.profile__timespan {
+    display: flex;
+    justify-content: space-between;
+    background-color: $infocard-background-clr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 3.5rem 2.5rem 2.5rem 3.5rem;
+    z-index: -1;
+}
+
+.card {
+    margin: 2rem auto;
+    grid-column: 2/-2;
+    width: 100%;
+}
+
+.card__top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 50px;
+}
+
+.card__content {
+    position: relative;
+    z-index: 10;
+    border-radius: 15px;
+    margin-top: -10px;
+    background-color: $infocard-background-clr;
+    padding: 2.5rem;
+}
+
+.card__content--title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__content--type {
+    color: $infocard-data-clr;
+    font-weight: 500;
+}
+
+.card__content--options {
+    color: $infocard-data-clr;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.card__content--data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__content--time {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.card__content--last {
+    color: $infocard-text-clr;
+    font-size: 1.2rem;
+}

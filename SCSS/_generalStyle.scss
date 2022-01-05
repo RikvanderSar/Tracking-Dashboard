@@ -1,0 +1,59 @@
+*, html {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+$usercard-background-clr: hsl(246, 80%, 60%);
+$topcard-work: hsl(15, 100%, 70%);
+$topcard-play: hsl(195, 74%, 62%);
+$topcard-study: hsl(348, 100%, 68%);
+$topcard-exercise:hsl(145, 58%, 55%);
+$topcard-social: hsl(264, 64%, 52%);
+$topcard-selfcare: hsl(43, 84%, 65%);
+$body-background-clr: hsl(226, 43%, 10%);
+$infocard-background-clr: hsl(235, 46%, 20%);
+$infocard-text-clr: hsl(235, 45%, 61%);
+$infocard-data-clr: hsl(236, 100%, 87%);
+
+body {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.8rem;
+    background-color: $body-background-clr;
+    color: $infocard-data-clr;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: clamp(1.4rem, 3vw, 2rem); 
+    font-weight: 300;
+    color: $infocard-data-clr;
+}
+
+h2 {
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    font-weight: 300;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: $infocard-text-clr;
+    transition: 0.3s;
+}
+
+a:hover,
+a:focus {
+    color: $infocard-data-clr;
+}
